@@ -1,0 +1,8 @@
+/* External file yang akan dikaitkan kedalam file JSX kita */
+
+.heading-style {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

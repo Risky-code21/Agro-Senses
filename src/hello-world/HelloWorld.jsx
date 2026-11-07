@@ -1,6 +1,7 @@
 // Component awal
 //Implementasi multiple component didalam satu file JSX. Menggunakan export function untuk mengekspor setiap component agar bisa digunakan di file lain.
 
+// Cara kita mendefinsikan style secara internal didalam jsx, yang nantinya akan kita petakan kedalam component yang kita buat
 const headingStyle = {
   color: "blue",
   fontSize: "30px",
@@ -14,7 +15,7 @@ export function Header({headingText = "Teks default"}) {
   return (
     <div>
       {/* Cara membaca variable didalam element HTML JSX dan insiate kedalam attribut element*/}
-      <h2 style={headingStyle}>{headingText} time: {time}</h2>
+      <h2 className="heading-style">{headingText} time: {time}</h2>
     </div>
   )
 }

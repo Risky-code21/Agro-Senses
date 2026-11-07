@@ -3,6 +3,9 @@ import { createRoot } from "react-dom/client";
 import {Header, Question} from "./hello-world/HelloWorld.jsx";
 import Container from "./hello-world/Container.jsx";
 
+// Gunakan import css dimain js untuk file css yang memiliki skala global (digunakan dibanyak file jsx) agar traffic untuk mengambil resource tidak terlalu berat, serta untuk menerapkan modern programming architcutre
+import "./hello-world/helloWorld.css"
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* Contoh penerapan Nested components dengan menggunakan magic props Children*/}
